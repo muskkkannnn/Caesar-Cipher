@@ -48,28 +48,13 @@ def caesar(start_text, shift_value, direction_value):
     
 #     print(f"The Decoded text is {plain_text}")
 
-while True:                                                  #Encrypt/Decrypt choice
+while True:                                                   #Encrypt/Decrypt choice
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
 
-    if direction == "encode" or direction == "decode":       #Try again loop for different responses 
+    if direction == "encode" or direction == "decode":        #Try again loop for different responses 
         break
     else:
         print("Try again!")
-    
-# if direction == "encode":
-#     # text = input("Type your message:\n").lower()
-#     # shift = int(input("Type the shift number:\n"))
-#     text, shift = choice()                                  #Unpacking Variables choice()
-#     encrypt(plain_text = text, shift_value = shift)
-    
-# elif direction == "decode":    
-#     # text = input("Type your message:\n").lower()
-#     # shift = int(input("Type the shift number:\n"))
-#     text, shift = choice()                                  #Unpacking Variables choice()
-#     decrypt(cipher_text = text, shift_value = shift)
-
-# else:
-#     print("No Access!")
 
 #TODO-2: Call the caesar() function, passing over the 'text', 'shift' and 'direction' values.
 text, shift = choice()                                         #Unpacking Variables choice()
